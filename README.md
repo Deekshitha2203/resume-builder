@@ -26,3 +26,5 @@ With Docker
 docker build -t resume-builder .
 docker run -p 7860:7860 --env-file .env resume-builder
 ```
+
+*Claude Sonnet 5 via Claude.ai helped me on Sep 13, 2026, with understanding why server_name="0.0.0.0" and server_port=7860 are required in hf.launch() for Docker deployment. This wasn't something I knew beforehand. I wrote the main code, prompt structure, the OpenAI client setup, and the Gradio interface myself.*
